@@ -133,3 +133,20 @@ Tangkapan layar dari pembuatan metode bernama `buildButtonColumn()`, yang mempun
 Buat Fungsi untuk menambahkan ikon langsung ke kolom. Teks berada di dalam Container dengan margin hanya di bagian atas, yang memisahkan teks dari ikon.
 
 Bangun baris yang berisi kolom-kolom ini dengan memanggil fungsi dan set warna, `Icon`, dan teks khusus melalui parameter ke kolom tersebut. Sejajarkan kolom di sepanjang sumbu utama menggunakan `MainAxisAlignment.spaceEvenly` untuk mengatur ruang kosong secara merata sebelum, di antara, dan setelah setiap kolom. Tambahkan kode berikut tepat di bawah deklarasi `titleSection` di dalam metode `build()`:
+
+`lib/main.dart`
+
+```dart
+Color color = Theme.of(context).primaryColor;
+
+Widget buttonSection = Row(
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  children: [
+    _buildButtonColumn(color, Icons.call, 'CALL'),
+    _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+    _buildButtonColumn(color, Icons.share, 'SHARE'),
+  ],
+);
+```
+Tangkapan layar dari penambahan kode diatas pada `lib/main.dart`
+!["Screenshot"](images/08.png)
