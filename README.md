@@ -149,4 +149,20 @@ Widget buttonSection = Row(
 );
 ```
 Tangkapan layar dari penambahan kode diatas pada `lib/main.dart`
+!["Screenshot"](images/09.png)
+
+### Langkah 3: Tambah button section ke body
+Tambahkan variabel `buttonSection` ke dalam body seperti berikut:
+```dart
+body: Column(
+  children: [
+    titleSection,
+    buttonSection,
+  ],
+),
+```
 !["Screenshot"](images/08.png)
+
+## Praktikum 3: Implementasi text section
+### Langkah 1: Buat widget textSection
+Tentukan bagian teks sebagai variabel. Masukkan teks ke dalam `Container` dan tambahkan padding di sepanjang setiap tepinya. Tambahkan kode berikut tepat di bawah deklarasi `buttonSection`:

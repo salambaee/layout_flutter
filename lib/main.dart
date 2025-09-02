@@ -17,6 +17,8 @@ class MyApp extends StatelessWidget {
       ],
     );
     
+
+
     return MaterialApp(
       title: 'Flutter layout: Salam Rizqi Mulia dan 362458302041',
       home: Scaffold(
