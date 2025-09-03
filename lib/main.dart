@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color color = Theme.of(context).primaryColor;
-    final Widget buttonSection = Row(
+    Widget buttonSection = Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         _buildButtonColumn(color, Icons.call, 'CALL'),
@@ -17,7 +17,13 @@ class MyApp extends StatelessWidget {
       ],
     );
     
-
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Kota Batu di Malang, Jawa Timur, terkenal dengan udara sejuk dan panorama pegunungan yang indah. Wisatawan dapat menikmati pendakian ringan di Gunung Panderman, mencoba olahraga paralayang di Gunung Banyak, hingga menjajal tantangan pendakian Gunung Arjuno-Welirang. Dengan alam yang asri dan pemandangan menawan, wisata gunung di Batu menjadi pilihan tepat untuk relaksasi maupun petualangan alam.',
+        softWrap: true,
+      )
+    );
 
     return MaterialApp(
       title: 'Flutter layout: Salam Rizqi Mulia dan 362458302041',
@@ -25,10 +31,17 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: Column(
+        body: ListView(
           children: [
+            Image.asset(
+              'images/lake.jpg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
             titleSection,
             buttonSection,
+            textSection,
           ],
         ),
       ),
