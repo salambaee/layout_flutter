@@ -1,4 +1,8 @@
 ## Praktikum 1: Membangun layout di Flutter
+README.md dibuat sebagai laporan https://flutter-codelabs.netlify.app/
+
+### SALAM RIQI MULIA (362458302041)
+
 ### Langkah 1: Buat Project Baru
 Buatlah sebuah project flutter baru dengan nama **layout_flutter**. Atau sesuaikan style laporan praktikum yang anda buat.
 !["Screenshoot"](images/01.png)
